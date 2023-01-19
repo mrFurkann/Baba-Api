@@ -1,0 +1,21 @@
+body{
+ 
+ 
+    background: #AA0000; 
+ 
+    background: linear-gradient(-90deg, #AA0000, #111111); 
+   
+  
+}
+.baslik{
+    display: flex;
+   justify-content: center;
+    
+    
+}
+
+.baslik img{
+    width: 10%;
+}
+
+
