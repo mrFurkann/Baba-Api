@@ -33,10 +33,26 @@ function getWeaponData(weaponObject) {
 
     console.log(name,icon,id);
     console.log(list);
-    card.innerHTML+=`<div class="col-2 mt-5 mb-1" style="color:white" id="${id}"><img style="width:150px;height:70px; margin: 0 auto;" src="${icon}"><h3 style=" font-family: monospace; "><span id='name-${id}'>${name}</span></h3> </img><div id="action"> <button onclick="Remove('${id}')" id="delete-${id}" class="btn btn-sm btn-danger"><img src="Trash.png" style="width:20px;"> </button>  
-    <button class="btn btn-sm btn-warning"   onclick="gizleGoster('${id}')" id="update-${id}"><img src="edit.png" style="width:20px;  " > </button>  
-    <button class="btn btn-sm btn-success"  style="display:none;" onclick="update('${id}')" id="save-${id}"><img src="edit.png" style="width:20px;  " > </button>  
-      <input class="mt-2" type="text" id="edit-${id}"  style="border-radius:3px; border:0px;display:none; "> </div></div>  `//(`<div style='color:white;'>Abc</div>`)
+    list.innerHTML+=`
+    <div class="col-md-3 col-sm-12 col-xs-12 mt-5 mb-1" style="color:white" id="${id}">
+
+    <div class="card text-center" style="background: linear-gradient(45deg, #cc0000, #0000, #cc0000, #0000); border-radius:25px; ">
+      <img style="width:150px;height:70px; " class="mx-auto mt-2" src="${icon}">
+        
+          <div class="card-body">
+          <h3 style=" font-family: monospace; "><span id='name-${id}'>${name}</span></h3> </img>
+          <div id="action"> <button onclick="Remove('${id}')" id="delete-${id}" class="btn btn-sm btn-danger"><img src="Trash.png" style="width:20px;"> </button>  
+        <button class="btn btn-sm btn-light"   onclick="gizleGoster('${id}')" id="update-${id}"><img src="edit.png" style="width:20px;  " > </button>  
+        <button class="btn btn-sm btn-success"  style="display:none;" onclick="update('${id}')" id="save-${id}"><img src="edit.png" style="width:20px;  " > </button>  
+        <input class="mt-2 mx-auto " type="text" id="edit-${id}"  style="border-radius:3px; border:0px;display:none; "> </div>
+          </div>
+
+        
+    </div>
+    
+    
+    
+      </div>  `//(`<div style='color:white;'>Abc</div>`)
     
 
 
